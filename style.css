@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins",sans-serif;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+:root{
+  --main-color:#f5b041;
+  --second-color:#212f3d;
+}
+body{
+  background-color: #B8FFF9;
+}
+
+/* navbar */
+
+nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 100px;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  transition: 0.5s;
+}
+nav .sticky{
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 0px 20px rgba(0 0 0 / 10%);
+
+}
+.logo{
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  color: var(--second-color);
+  font-weight: 700;
+}
+ul{
+  display: flex;
+}
+ul li a{
+  padding: 10px 30px;
+  color: var(--second-color);
+  border-radius: 2px;
+  font-weight: 300;
+  letter-spacing:1px;
+  font-size: 1.2em;
+}
+ul li a:hover{
+  background:var(--main-color);
+  color:white;
+  border: none;
+}
+/* navbar */
+
+.home{
+  position: relative;
+  max-width: 1450px;
+  min-height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0rem 6rem;
+  flex-direction: column;
+   margin-bottom:0;
+}
+
+.home .home-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+/* .home-container .media-icons{
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  } */
+.social-icons{
+
+    padding-top: 100px;
+  }
+
+
+.flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* home */
+
+
+ .home-container .info h1{
+   color: var(--second-color);
+   font-size:4rem;
+   font-weight: 600;
+   margin-bottom: 2.5rem;
+   line-height: 70px;
+ }
+ .home-container .info h2{
+   color: var(--main-color);
+   font-size:  3rem;
+   font-weight: 600;
+   line-height: 50px;
+ }
+ .home-container .info p{
+   color: var(--second-color);
+   font-size: 1.9rem;
+   max-width: 400px;
+   padding: 40px 0 15px 0;
+ }
+  .home-container .info h3{
+   color: black;
+   font-size:  2.5rem;
+   font-weight: 600;
+   line-height: 50px;
+  padding-bottom: 40px;
+ }
+
+ /* Hire */
+ .home-container .info a {
+   padding: 10px 34px;
+   background: var(--main-color);
+   color: white;
+   border-radius: 10px;
+   font-weight: 600;
+   letter-spacing: 1px;
+ }
+ .home-container a:hover{
+   background: var(--second-color);
+   box-shadow: 0 10px 34px rgba(0 ,0,0,0.14);
+ }
+ .home .scrool-down{
+   color: var(--main-color);
+   font-size: 1em;
+   font-weight: 100;
+   margin-top: 20px;
+ }
+ .home .scrool-down i{
+   margin-top:  100px;
+   color: var(--second-color);
+   font-size: 1em;
+   animation: arrow-down ease 2s infinite;
+ }
+
+.home-img{
+  width: 460px;
+  height: 460px;
+
+
+}
+.home-img img {
+  width: 30rem;
+  border-radius:30px;
+  margin-right: 50px;
+  margin-top: 30px;
+
+}
+section{
+  position: relative;
+  margin-bottom: 0;
+  width: 1450px;
+  margin-left: auto;
+  margin-right: auto;
+  padding:0 12rem ;
+}
+.sub-section{
+  position: relative;
+  width: 1150px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 6rem 0;
+}
+.section-title-01{
+  font-size: 4.5em;
+  font-weight: 800;
+  background: linear-gradient(to top,transparent 0%,var( --main-color) );
+  
+  -web-text-fill-color:transparent;
+  opacity: .1;
+}
+.section-title-02{
+  font-size: 2.5em;
+  font-weight: 700;
+  transform: translate(-10px);
+}
+.section-title-02:before{
+  content: '';
+  position: absolute;
+  width: 70px;
+  height: 5px;
+  right: 0;
+  bottom: 0;
+  background:  var(--main-color);
+}
+
+.container{
+  position: relative;
+  flex-direction: column;
+}
+
+/* about */
+
+#about .container .content{
+
+  column-gap: 60px;
+  width: 100%;
+}
+
+.about-img{
+  position: relative;
+}
+.about-img img{
+  width: 30rem;
+  border-radius: 200px;
+  margin:5rem 10rem 0 0;
+
+}
+
+.about-info .description h3{
+  font-size: 3em;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.about-info .description h4{
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.about-info .description h4 span{
+  color:  var(--second-color);
+
+}
+.about-info .description p{
+  color: var(--main-color);
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  padding-bottom: 25px;
+  border-bottom: 2px solid var(--second-color);
+
+}
+.about-info .professional-list {
+  display :flex;
+  column-gap:50px;
+}
+.about-info .professional-list .list-item h3{
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+.about-info .professional-list .list-item span{
+  font-size: 0.9em;
+   color: var(--main-color);
+
+}
+
+/* downloard cv */
+.about-info  a {
+  padding: 5px 34px;
+  background: var(--second-color);
+  color: white;
+  border-radius: 10px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.about-info ul{
+  padding-bottom: 40px;
+}
+.about-info a:hover{
+  background: var(--main-color);
+  box-shadow: 0 10px 34px rgba(0 ,0,0,0.14);
+}
+
+
+.section-title-01{
+  margin-top:  150px ;
+}
+.section-title-02{
+  margin-bottom: 50px ;
+}
+
+.services-content{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+.box{
+  width: 500px;
+  height: 400px;
+}
+.services-content .box{
+  border-radius: 30px;
+  padding: 40px;
+  background: #44a08d;
+  color: white;
+  /* max-width: 300px; */
+  margin: 14px;
+  text-align: center;
+
+}
+.box img{
+  height: 150px;
+}
+ .box h1{
+  font-size: 1.5rem;
+  color: black;
+}
+.box p{
+  margin-top: 0.9rem;
+  margin-bottom:  1.2rem;
+  font-size: 1.2rem;
+  font-weight: 250;
+}
+.services-content .box:hover{
+
+  background-color: var(--main-color);
+}
+
+/* Hire */
+.box a {
+  padding: 6px 25px;
+  background: var(--main-color);
+  color: white;
+  border-radius: 10px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-top: 20px;
+}
+.box a:hover{
+  background: var(--second-color);
+  box-shadow: 0 10px 34px rgba(0 ,0,0,0.14);
+}
+.box img{
+  border-radius: 45px;
+}
+
+/* Contact */
+
+.contact .contact-content .column{
+  width: calc(50% -30px);
+}
+.contact .contact-content .text{
+  font-size: 40px;
+  font-weight: 600;
+  margin: 0px 0 25px 0 ;
+  color: red;
+}
+.contact .contact-content .left p{
+  text-align: justify;
+  font-size: 25px;
+  max-width: 25rem;
+}
+.contact .contact-content .left .icons{
+  margin: 10px 0;
+}
+.contact .contact-content .row{
+  display: flex;
+  height: 65px;
+  align-items: center;
+}
+.contact .contact-content .row .info{
+  margin-left: 30px;
+}
+.contact .contact-content .row i{
+  font-size: 25px;
+  color: red;
+}
+.contact .contact-content .info .head{
+  font-weight: 500;
+  color: red;
+}
+.contact .contact-content .row .sub-title{
+  color: #333;
+}
+.contact .contact-content .left{
+  margin:3rem 10rem 0 0;
+}
+
+.contact .right form .fields{
+  display: flex;
+}
+.contact .right {
+  font-size: 25px;
+  color: red;
+
+
+
+}
+.contact .right form .fields,
+.contact .right form .field .field{
+  height: 45px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.contact .right form .textarea{
+  height: 800px;
+}
+.contact .right form .name{
+  margin: 10px 10px 10px 0;
+
+}
+.contact .right form .email{
+    margin: 10px 10px 10px 0;
+}
+.contact .right form .subject{
+  margin: 10px 10px 10px 0;
+}
+.contact .right form .field input,
+.contact .right form .textarea textarea{
+  height: 100%;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 7px;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+}
+.contact .right form .textarea textarea {
+  padding-top: 10px;
+  resize: none;
+}
+.contact .right form .button{
+  height: 40px;
+  width: 50%;
+}
+.contact .right form .button button{
+  width: 100%;
+  height:100%;
+  border: 2px solid red;
+  background: red;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.contact .right form .button button:hover{
+  color: red;
+  background: none;
+}
+
+/* footer  */
+footer{
+  margin-top:100px;
+ background: lightgrey;
+ padding: 7px 23px;
+ color: white;
+ text-align: center;
+}
+footer span a{
+  color: black;
+  text-decoration: none;
+}
+footer span a:hover{
+text-decoration: underline;
+}
